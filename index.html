@@ -17,18 +17,19 @@
 <body>
 <main>
 <h1>Qarun privacy policy</h1>
-<p class="muted">Last updated: 12 November 2026</p>
+<p class="muted">Last updated: 13 November 2026</p>
 
-<p>Qarun is an Android app for tasks, time and personal money records. This page explains what happens to your information when you use it.</p>
+<p>Qarun is an app for tasks, time and personal money records, on Android phones and on Windows laptops. This page explains what happens to your information when you use it.</p>
 
 <h2>What we collect</h2>
 <p>Nothing reaches us. Qarun has no account, no sign-in, no ads, no analytics and no tracking, and there is no Qarun server.</p>
-<p><strong>Voice entry (optional).</strong> If you add your own Google Gemini API key in Settings and tap the microphone, that one recording is sent over an encrypted connection to Google's Gemini service, which turns it into a task or a money entry for you to check. Nothing is sent unless you tap the microphone. Google processes the recording under <a href="https://ai.google.dev/gemini-api/terms" style="color:#d4af37">its own terms</a>; Qarun does not keep the recording after it is understood. Without a key, the app never uses the internet.</p>
+<p><strong>Voice entry (optional).</strong> If you add your own Google Gemini API key in Settings and tap the microphone, that one recording is sent over an encrypted connection to Google's Gemini service, which turns it into a task or a money entry for you to check. Nothing is sent unless you tap the microphone. Google processes the recording under <a href="https://ai.google.dev/gemini-api/terms" style="color:#d4af37">its own terms</a>; Qarun does not keep the recording after it is understood. Without a key, the app never uses the internet. The laptop link below uses only your own Wi-Fi.</p>
 
 <h2>Where your data lives</h2>
 <p>Your tasks, timers, habits, accounts, budgets and money entries are stored only on your phone, inside the app's private storage.</p>
 <ul>
   <li><strong>Backup files.</strong> If you choose "Save a backup file", Qarun writes one file to the place you pick (for example your phone's storage or Google Drive). That file is yours; we never see it.</li>
+  <li><strong>A linked laptop (optional).</strong> If you link Qarun on your phone with Qarun on your own Windows laptop, your Qarun data is copied between those two devices over your local Wi-Fi, so both show the same tasks, time and money. The link is end-to-end encrypted with a key that only your two devices hold; it goes through no server, and we never see it. Unlink in Settings &gt; Laptop at any time; both keep their own copy.</li>
   <li><strong>Android backup.</strong> If backup is turned on in your phone's settings, Android may keep a copy of the app's data in your own Google account, under Google's privacy policy. You can turn this off in your phone's settings.</li>
 </ul>
 
@@ -36,14 +37,18 @@
 <ul>
   <li><strong>Notifications</strong> to remind you of tasks, show a running timer, and show the morning brief.</li>
   <li><strong>Microphone and internet</strong> only for voice entry, only when you tap the microphone.</li>
+  <li><strong>Network</strong> on your local Wi-Fi to find and sync with your linked laptop, only if you link one.</li>
   <li><strong>Alarms and reminders</strong> so a reminder rings at the minute you chose.</li>
   <li><strong>Run at startup</strong> to set your next reminder again after the phone restarts.</li>
   <li><strong>Vibration</strong> for a short buzz when you tick something off.</li>
   <li><strong>Fingerprint</strong> to open the app lock, if you turn it on. Android checks the fingerprint; Qarun never sees or stores it. Your PIN is kept only as a scrambled (hashed) value on the phone.</li>
 </ul>
 
+<h2>Qarun for Windows</h2>
+<p>The laptop app keeps its copy of your data on that computer only (in your user folder, <code>%LOCALAPPDATA%\Qarun</code>), with daily backup copies beside it. It listens on your local network only so your phone can link to it, and it answers only devices you linked with a code. It has no account, no analytics and no tracking. Task reminders show as notifications on the laptop if you allow them.</p>
+
 <h2>Deleting your data</h2>
-<p>Delete any item inside the app, or uninstall Qarun to remove everything it stored on the phone.</p>
+<p>Delete any item inside the app (on a linked laptop, the deletion reaches the other device too), or uninstall Qarun to remove everything it stored on the phone. On Windows, uninstall Qarun or delete the Qarun folder and <code>%LOCALAPPDATA%\Qarun</code>.</p>
 
 <h2>Children</h2>
 <p>Qarun is meant for adults and is not directed at children.</p>
